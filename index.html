@@ -1,0 +1,151 @@
+<!--page web presentant un portfolio d'un etudiant en informatique-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <!--import une page javascript-->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+                <!--<li><a href="competences.html">Compétences</a></li>-->
+                <li><a onclick="scrollToSection('#page2')">Experiences</a></li>
+                <!--<li><a href="cv.html">CV</a></li>-->
+                <li><a onclick="scrollToSection('#contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="nom">
+                <h1 class="Title">Lyam Dessup</h1>
+            </div>
+            <div class="presentation">
+                <p>Je suis Lyam Dessup étudiant en BUT informatique.</p>
+                <div class="bouton">
+                   <!-- <a href="cv.html">Voir mon CV</a>-->
+                    <a onclick="scrollToSection('#page2')">Voir mes Experiences</a>
+                    <a onclick="scrollToSection('#contact')">Me contacter</a>
+                </div>
+            </div>
+        </main>
+    </header>
+    <div class="page2" id="page2">
+        <header>
+
+            <h1 class="Title">Experiences</h1>
+            <div id="experiences">
+                
+                    <div id="experience">
+                        <h2>Odomo</h2>
+                        <h3>Programmation d'une petite centrale domotique</h3>
+                        <p>
+                            Fonctions domotiques: stockage et affichage de données météorologiques, gestion d’une
+                            chaudière, gestion de cultures du potager
+                            Écran LCD simulé par la console en mode texte
+                            Plusieurs parties: Météo, Histogramme, Chauffage et Jardin
+                            Code fourni à importer dans NetBeans
+                            Projet individuel
+                        </p>
+                        <div id="images">
+                            <img src="./img/screen1.jpg" alt="">
+                            <img src="./img/screen2.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div id="experience">
+                        <h2>Hyper Stellar Space Station</h2>
+                        <h3>Programation d'un jeu complet en C#</h3>
+                        <p>
+                            Ce projet consiste à développer une application complète en utilisant C#, .NET Framework
+                            et
+                            Windows Forms. L'objectif est de répondre aux besoins exprimés en créant une application
+                            avec
+                            une interface graphique. Nous avons suivi les étapes de formalisation des besoins, de
+                            conception, d'implémentation et de test pour mener à bien ce projet.
+                        </p>
+                        <div id="images">
+                            <img src="./img/UMLHss.PNG" alt="">
+                            <img src="./img/interfaceHss.PNG" alt="">
+                        </div>
+                    </div>
+                
+                
+                    <div id="experience">
+                        <h2>Biosphere7</h2>
+                        <h3>Programation d'un jeu de plateau avec son IA</h3>
+                        <p>
+                            Le projet Biosphere7 consiste à développer un jeu de plateau avec deux phases distinctes. La
+                            phase 1 consiste à coder les règles du jeu et les actions possibles pour un joueur, avec
+                            différents niveaux à coder individuellement. La phase 2 implique la création de deux
+                            intelligences artificielles (IA) en binôme pour un niveau spécifique du jeu. Le jeu se
+                            déroule sur un plateau de 14x14 cases et les joueurs doivent planter des plantes et obtenir
+                            le plus de points de vitalité pour gagner. Le projet nécessite également la participation à
+                            des simulations et la rédaction d'un rapport décrivant les IA et justifiant le choix de l'IA
+                            finale, ainsi qu'une section portfolio présentant les contributions et les réalisations du
+                            binôme.
+                        </p>
+
+                        <div id="images">
+                            <img src="./img/Biosphere1.png" alt="">
+                            <img src="./img/Biosphere2.png" alt="">
+                        </div>
+                    </div>
+                    <div id="experience">
+                        <h2>BilletConcert.fr</h2>
+                        <h3>Création d'une base de données</h3>
+                        <p>
+                            Ce projet consiste a créer une base de données pour un site de vente de billets de concert
+                            étape par étape. Cela commence par la création du MCD pour modéliser la base puis de generer
+                            le modele logique ainsi que le script de création de la base de données et le script de
+                            remplissage.
+                        </p>
+                        <div id="images">
+                            <img src="./img/UMLHss.PNG" alt="">
+                            <img src="./img/interfaceHss.PNG" alt="">
+                        </div>
+                    </div>
+
+
+                
+            </div>
+        </header>
+
+
+    </div>
+    <div class="contact" id="contact">
+        <div class="titre" >
+            <h1 class="Title" >Contact</h1>
+        </div>
+
+
+        <form action="https://formspree.io/f/mqkoowoy" method="post">
+            <input type="text" name="Nom" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Objet">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" name="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <a href="#" class="wave-btn up-btn" onclick="scrollToSection('#nav')"><span>Up</span></a>
+
+
+
+
+
+
+
+</body>
+
+</html>
