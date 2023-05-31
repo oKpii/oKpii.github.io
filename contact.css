@@ -58,3 +58,15 @@ form>button {
     color: #1d5b99;
 
 }
+
+@media screen and (max-width: 700px){
+    .contact{
+        padding: 2%;
+    }
+    form{
+        
+        height: 50%;
+        width: 80%;
+
+    }
+}
